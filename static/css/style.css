@@ -58,18 +58,26 @@ header {
     margin: 0 8px;
 }
 
-.division {
+
+.btn-favorite-more {
+    width:32px;
+    height:32px;
+    background: transparent;
+    border-radius: 100px;
+    right: 8px;
+    top: 8px;
+    color: white;
+    font-size: 17px;
+
 }
 
 main {
-    background-color: antiquewhite;
+    background-color: black;
     min-height: 500px;
 }
 
 .container {
-    /* width: 1296px; */
     padding: 20px;
-    border: 1px solid;
     display: flex;
     height: auto;
 }
@@ -90,15 +98,11 @@ main {
 }
 
 .categories {
-    background-color: green;
+    background-color: black;
     min-width: 288px;
-    padding: 24px 90px;
+    padding: 45px 60px;
 }
 
-.list {
-    background-color: gold;
-    width: 100%;
-}
 
 .thumbnail-image img {
     width: 30px;
@@ -121,23 +125,70 @@ main {
     font-size: 18px;
 }
 
-.favorite-category:before {
-    content: "관심 카테고리";
+.favorite-category {
+    margin-right: 20px;
 }
 
-.category-first li.first {
+.category-first .first {
     vertical-align: center;
     color: white;
     border-radius: 20px;
     width: 240px;
-    height: 48px;
-    font-size: 22px;
-    padding: 20px;
+    font-size: 17px;
+    padding: 10px;
     background-color: black;
+    margin-top: 5px;
+}
+
+.first span {
+    padding: 3px;
+}
+
+.first span.icon {
+    margin-right: 3px;
+    background: transparent;
+}
+
+.category-first .first.active {
+    background-color: #26272b;
 }
 
 .category-second li.second {
     color: grey;
     width: 160px;
-    height: 36px;
+    font-size: 15px;
+    background-color: black;
+    padding: 5px;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+/* section list */
+.list-wrapper {
+    padding: 45px;
+    width: 100%;
+}
+
+.list-header {
+    font-size: 20px;
+}
+
+.list-item {
+    max-width: 200px;
+    padding: 20px;
+}
+
+.list-item img {
+    max-width: 200px;
+}
+
+span.division {
+    content: "";
+    top: 3px;
+    width: 1px;
+    height: 14px;
+    background-color: transparent;
+    position: relative;
+    padding: 0;
+    margin: 0 8px;
 }
